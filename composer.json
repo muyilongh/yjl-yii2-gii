@@ -1,0 +1,21 @@
+{
+    "name": "yjl/yjl-yii2-gii",
+    "description": "GII advanced customization, save a lot of repeated development.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","gii","extension"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "yjl",
+            "email": "1366899978@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yjl\\Gii\\": ""
+        }
+    }
+}

@@ -24,14 +24,14 @@ rules. Take a look at some existing [giiant providers](https://github.com/schmun
 
 To configure providers, add this to your provider list in the form or command configuration:
 
-    \schmunk42\giiant\generators\crud\providers\extensions\EditorProvider,
-    \schmunk42\giiant\generators\crud\providers\core\OptsProvider,
+    \Yjl\Gii\generators\crud\providers\extensions\EditorProvider,
+    \Yjl\Gii\generators\crud\providers\core\OptsProvider,
 
 
 And to configure the settings of the provider, add settings via dependecy injection to your application config, e.g. in `console/config/bootstrap.php`:
 
     \Yii::$container->set(
-        \schmunk42\giiant\generators\crud\providers\extensions\EditorProvider::class,
+        \Yjl\Gii\generators\crud\providers\extensions\EditorProvider::class,
         [
             'columnNames' => ['description']
         ]
@@ -86,7 +86,7 @@ Finally add the configuration via DI container
 
 ```
 \Yii::$container->set(
-    \schmunk42\giiant\generators\crud\providers\core\CallbackProvider::class,
+    \Yjl\Gii\generators\crud\providers\core\CallbackProvider::class,
     [
         'activeFields'  => $activeFields,
         'columnFormats' => $columnFormats,
@@ -101,7 +101,7 @@ To generate dropdown list in GridView filed search filter set configuration via 
 
 ```php
 \Yii::$container->set(
-    \schmunk42\giiant\generators\crud\providers\core\RelationProvider::class,
+    \Yjl\Gii\generators\crud\providers\core\RelationProvider::class,
     [
         'gridFilterDropdownRelation' => true,
     ]
@@ -116,7 +116,7 @@ To generate dropdown list in GridView filed search filter set configuration via 
 Use a DateTimePicker for the `scheduled_at` field:
 
 ```php
-\Yii::$container->set('schmunk42\giiant\generators\crud\providers\extensions\DateTimeProvider', [
+\Yii::$container->set('Yjl\Gii\generators\crud\providers\extensions\DateTimeProvider', [
     'columnNames' => ['scheduled_at'],
 ]);
 ```

@@ -5,11 +5,11 @@ use yii\helpers\StringHelper;
 
 /*
  * @var yii\web\View $this
- * @var schmunk42\giiant\generators\crud\Generator $generator
+ * @var Yjl\Gii\generators\crud\Generator $generator
  */
 
 /** @var \yii\db\ActiveRecord $model */
-/** @var $generator \schmunk42\giiant\generators\crud\Generator */
+/** @var $generator \Yjl\Gii\generators\crud\Generator */
 
 ## TODO: move to generator (?); cleanup
 $model = new $generator->modelClass();

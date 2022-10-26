@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\generators\crud\callbacks\yii;
+namespace Yjl\Gii\generators\crud\callbacks\yii;
 
 class Html
 {

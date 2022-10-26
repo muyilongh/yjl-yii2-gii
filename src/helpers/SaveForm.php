@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\helpers;
+namespace Yjl\Gii\helpers;
 
 use yii\helpers\Json;
 use yii\helpers\StringHelper;

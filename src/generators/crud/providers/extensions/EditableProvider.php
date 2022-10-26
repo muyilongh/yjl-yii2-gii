@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\generators\crud\providers\extensions;
+namespace Yjl\Gii\generators\crud\providers\extensions;
 
 use yii\db\ColumnSchema;
 use yii\helpers\Inflector;
@@ -10,7 +10,7 @@ use yii\helpers\Inflector;
  *
  * @author Uldis Nelsons
  */
-class EditableProvider extends \schmunk42\giiant\base\Provider
+class EditableProvider extends \Yjl\Gii\base\Provider
 {
     public $skipVirtualAttributes = false;
 

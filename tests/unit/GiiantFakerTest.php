@@ -1,6 +1,6 @@
 <?php
 namespace tests\codeception\unit\models;
-use schmunk42\giiant\helpers\GiiantFaker;
+use Yjl\Gii\helpers\GiiantFaker;
 use Codeception\Specify;
 
 class GiiantFakerTest extends \Codeception\Test\Unit

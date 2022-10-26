@@ -1,8 +1,8 @@
 <?php
 
-namespace schmunk42\giiant\generators\crud\providers\extensions;
+namespace Yjl\Gii\generators\crud\providers\extensions;
 
-class DateTimeProvider extends \schmunk42\giiant\base\Provider
+class DateTimeProvider extends \Yjl\Gii\base\Provider
 {
     public function activeField($attribute)
     {

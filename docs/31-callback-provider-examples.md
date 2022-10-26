@@ -238,7 +238,7 @@ Join it all together
 To invoke the callback provider we pass in our callbacks as follows:
 
 ```php
-\Yii::$container->set('schmunk42\giiant\generators\crud\providers\core\CallbackProvider', [
+\Yii::$container->set('Yjl\Gii\generators\crud\providers\core\CallbackProvider', [
     'columnFormats' => $columnFormats,
     'attributeFormats' => $attributeFormats,
     'activeFields' => $activeFields,
@@ -259,12 +259,12 @@ To invoke the callback provider we pass in our callbacks as follows:
 <?php
 namespace temp;
 
-use schmunk42\giiant\generators\crud\callbacks\base\Callback;
-use schmunk42\giiant\generators\crud\callbacks\yii\Db;
-use schmunk42\giiant\generators\crud\callbacks\yii\Html;
+use Yjl\Gii\generators\crud\callbacks\base\Callback;
+use Yjl\Gii\generators\crud\callbacks\yii\Db;
+use Yjl\Gii\generators\crud\callbacks\yii\Html;
 
 \Yii::$container->set(
-    'schmunk42\giiant\generators\crud\providers\core\CallbackProvider',
+    'Yjl\Gii\generators\crud\providers\core\CallbackProvider',
     [
         'columnFormats'    => [
             // hide system fields, but not ID in table

@@ -2,7 +2,7 @@
 
 namespace yii\gii\generators\extension;
 
-namespace schmunk42\giiant\generators\extension;
+namespace Yjl\Gii\generators\extension;
 
 use Yii;
 use yii\gii\CodeFile;

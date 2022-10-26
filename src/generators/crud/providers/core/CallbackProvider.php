@@ -5,9 +5,9 @@
  * Date: 19.03.14
  * Time: 01:01.
  */
-namespace schmunk42\giiant\generators\crud\providers\core;
+namespace Yjl\Gii\generators\crud\providers\core;
 
-class CallbackProvider extends \schmunk42\giiant\base\Provider
+class CallbackProvider extends \Yjl\Gii\base\Provider
 {
     public $activeFields = [];
     public $prependActiveFields = [];

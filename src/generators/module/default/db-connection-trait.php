@@ -4,7 +4,7 @@
  */
 
 /* @var $this yii\web\View */
-/* @var $generator schmunk42\giiant\generators\module\Generator */
+/* @var $generator Yjl\Gii\generators\module\Generator */
 
 echo "<?php\n";
 ?>

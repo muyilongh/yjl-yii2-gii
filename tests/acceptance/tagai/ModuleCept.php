@@ -1,6 +1,6 @@
 <?php
 
-use schmunk42\giiant\tests\_pages\LoginPage;
+use Yjl\Gii\tests\_pages\LoginPage;
 
 $I = new AcceptanceTester($scenario);
 

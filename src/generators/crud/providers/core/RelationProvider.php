@@ -5,15 +5,15 @@
  * Date: 14.03.14
  * Time: 10:21.
  */
-namespace schmunk42\giiant\generators\crud\providers\core;
+namespace Yjl\Gii\generators\crud\providers\core;
 
-use schmunk42\giiant\generators\model\Generator as ModelGenerator;
+use Yjl\Gii\generators\model\Generator as ModelGenerator;
 use yii\db\ActiveRecord;
 use yii\db\ColumnSchema;
 use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
 
-class RelationProvider extends \schmunk42\giiant\base\Provider
+class RelationProvider extends \Yjl\Gii\base\Provider
 {
     /**
      * @var null can be null (default) or `select2`

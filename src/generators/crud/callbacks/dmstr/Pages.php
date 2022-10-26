@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\generators\crud\callbacks\dmstr;
+namespace Yjl\Gii\generators\crud\callbacks\dmstr;
 
 use dmstr\modules\pages\models\Tree;
 use kartik\tree\TreeViewInput;

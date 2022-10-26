@@ -8,7 +8,7 @@ use yii\helpers\StringHelper;
 
 /**
  * @var yii\web\View $this
- * @var schmunk42\giiant\generators\model\Generator $generator
+ * @var Yjl\Gii\generators\model\Generator $generator
  * @var string $tableName full table name
  * @var string $className class name
  * @var yii\db\TableSchema $tableSchema

@@ -1,11 +1,11 @@
 <?php
 
-use schmunk42\giiant\helpers\SaveForm;
+use Yjl\Gii\helpers\SaveForm;
 
 /**
  * @var yii\web\View
  * @var yii\bootstrap\ActiveForm                   $form
- * @var schmunk42\giiant\generators\crud\Generator $generator
+ * @var Yjl\Gii\generators\crud\Generator $generator
  */
 
 /*

@@ -5,7 +5,7 @@
  * Date: 09.06.15
  * Time: 22:40.
  */
-namespace schmunk42\giiant\generators\crud\callbacks\devgroup;
+namespace Yjl\Gii\generators\crud\callbacks\devgroup;
 
 use dmstr\modules\widgets\helpers\StringFormatter;
 use yii\bootstrap\Collapse;

@@ -5,9 +5,9 @@
  * @copyright Copyright (c) 2014 herzog kommunikation GmbH
  * @license http://www.phundament.com/license/
  */
-namespace schmunk42\giiant\generators\model;
+namespace Yjl\Gii\generators\model;
 
-use schmunk42\giiant\helpers\SaveForm;
+use Yjl\Gii\helpers\SaveForm;
 use Yii;
 use yii\gii\CodeFile;
 use yii\helpers\Inflector;

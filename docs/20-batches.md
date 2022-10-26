@@ -16,7 +16,7 @@ With the config array...
 
     'controllerMap' => [
         'batch' => [
-            'class' => 'schmunk42\giiant\commands\BatchController',
+            'class' => 'Yjl\Gii\commands\BatchController',
             'overwrite' => true,
             'modelNamespace' => $crudNs . '\models',
             'modelQueryNamespace' => $crudNs . '\models\query',
@@ -27,7 +27,7 @@ With the config array...
             'crudTidyOutput' => true,
             'crudActionButtonColumnPosition' => 'right', //left by default
             'crudProviders' => [
-                \schmunk42\giiant\generators\crud\providers\core\OptsProvider::className()
+                \Yjl\Gii\generators\crud\providers\core\OptsProvider::className()
             ],
             'tablePrefix' => 'app_',
             'tables' => [

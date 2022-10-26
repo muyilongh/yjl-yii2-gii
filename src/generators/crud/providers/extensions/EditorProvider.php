@@ -5,9 +5,9 @@
  * Date: 14.03.14
  * Time: 10:21.
  */
-namespace schmunk42\giiant\generators\crud\providers\extensions;
+namespace Yjl\Gii\generators\crud\providers\extensions;
 
-class EditorProvider extends \schmunk42\giiant\base\Provider
+class EditorProvider extends \Yjl\Gii\base\Provider
 {
     public $widget = 'ckeditor';
     public $widgets = [];

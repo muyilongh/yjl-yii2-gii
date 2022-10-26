@@ -1,9 +1,9 @@
 <?php
 
-namespace schmunk42\giiant\commands;
+namespace Yjl\Gii\commands;
 
-use schmunk42\giiant\generators\crud\Generator;
-use schmunk42\giiant\generators\model\Generator as ModelGenerator;
+use Yjl\Gii\generators\crud\Generator;
+use Yjl\Gii\generators\model\Generator as ModelGenerator;
 use yii\console\Application;
 use yii\console\Controller;
 use yii\helpers\ArrayHelper;
@@ -253,7 +253,7 @@ class BatchController extends Controller
     /**
      * @var string Class name of the model generator
      */
-    public $modelGeneratorClass = 'schmunk42\giiant\generators\model\Generator';
+    public $modelGeneratorClass = 'Yjl\Gii\generators\model\Generator';
 
     /**
      * @var bool indicates whether to generate ActiveQuery for the ActiveRecord class
@@ -295,7 +295,7 @@ class BatchController extends Controller
     protected $appConfig;
 
     /**
-     * @var instance of class schmunk42\giiant\generators\model\Generator
+     * @var instance of class Yjl\Gii\generators\model\Generator
      */
     protected $modelGenerator;
 

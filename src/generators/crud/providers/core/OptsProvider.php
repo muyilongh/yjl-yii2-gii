@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\generators\crud\providers\core;
+namespace Yjl\Gii\generators\crud\providers\core;
 
 use yii\db\ColumnSchema;
 
@@ -9,7 +9,7 @@ use yii\db\ColumnSchema;
  *
  * @author Christopher Stebe <c.stebe@herzogkommunikation.de>
  */
-class OptsProvider extends \schmunk42\giiant\base\Provider
+class OptsProvider extends \Yjl\Gii\base\Provider
 {
     public function activeField($attribute)
     {

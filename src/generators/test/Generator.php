@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\generators\test;
+namespace Yjl\Gii\generators\test;
 
 use Yii;
 use yii\gii\CodeFile;
@@ -11,7 +11,7 @@ use yii\db\Schema;
  *
  * @author Github: gradosevic
  */
-class Generator extends \schmunk42\giiant\generators\model\Generator
+class Generator extends \Yjl\Gii\generators\model\Generator
 {
     /**
      * @var string

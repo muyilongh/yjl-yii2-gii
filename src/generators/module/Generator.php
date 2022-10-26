@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\generators\module;
+namespace Yjl\Gii\generators\module;
 
 use yii\gii\CodeFile;
 use yii\helpers\StringHelper;

@@ -5,7 +5,7 @@
  * Date: 09.06.15
  * Time: 23:23.
  */
-namespace schmunk42\giiant\generators\crud\callbacks\yii;
+namespace Yjl\Gii\generators\crud\callbacks\yii;
 
 class Image
 {

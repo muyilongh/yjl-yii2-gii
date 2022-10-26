@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\generators\crud\callbacks\base;
+namespace Yjl\Gii\generators\crud\callbacks\base;
 
 class Callback
 {

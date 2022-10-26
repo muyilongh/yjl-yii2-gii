@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\generators\crud;
+namespace Yjl\Gii\generators\crud;
 
 /**
  * @link http://www.diemeisterei.de/

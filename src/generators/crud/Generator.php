@@ -6,7 +6,7 @@
  * @license   http://www.yiiframework.com/license/
  */
 
-namespace schmunk42\giiant\generators\crud;
+namespace Yjl\Gii\generators\crud;
 
 use Yii;
 use yii\db\BaseActiveRecord;
@@ -14,7 +14,7 @@ use yii\gii\CodeFile;
 use yii\helpers\FileHelper;
 use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
-use schmunk42\giiant\helpers\SaveForm;
+use Yjl\Gii\helpers\SaveForm;
 use yii\web\Controller;
 use yii\db\ActiveRecord;
 use yii\db\Schema;

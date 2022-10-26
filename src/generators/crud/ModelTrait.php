@@ -1,6 +1,6 @@
 <?php
 
-namespace schmunk42\giiant\generators\crud;
+namespace Yjl\Gii\generators\crud;
 
 /*
  * @link http://www.diemeisterei.de/
@@ -10,7 +10,7 @@ namespace schmunk42\giiant\generators\crud;
  * file that was distributed with this source code.
  */
 
-use schmunk42\giiant\generators\model\Generator as ModelGenerator;
+use Yjl\Gii\generators\model\Generator as ModelGenerator;
 use yii\db\ActiveQuery;
 use yii\helpers\Inflector;
 

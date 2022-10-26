@@ -7,7 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code
  */
-namespace schmunk42\giiant;
+namespace Yjl\Gii;
 
 use yii\base\Application;
 use yii\base\BootstrapInterface;
@@ -28,16 +28,16 @@ class Bootstrap implements BootstrapInterface
     {
         if ($app->hasModule('gii')) {
             if (!isset($app->getModule('gii')->generators['giiant-model'])) {
-                $app->getModule('gii')->generators['giiant-model'] = 'schmunk42\giiant\generators\model\Generator';
+                $app->getModule('gii')->generators['giiant-model'] = 'Yjl\Gii\generators\model\Generator';
             }
 
             if (!isset($app->getModule('gii')->generators['giiant-extension'])) {
-                $app->getModule('gii')->generators['giiant-extension'] = 'schmunk42\giiant\generators\extension\Generator';
+                $app->getModule('gii')->generators['giiant-extension'] = 'Yjl\Gii\generators\extension\Generator';
             }
 
             if (!isset($app->getModule('gii')->generators['giiant-crud'])) {
                 $app->getModule('gii')->generators['giiant-crud'] = [
-                    'class' => 'schmunk42\giiant\generators\crud\Generator',
+                    'class' => 'Yjl\Gii\generators\crud\Generator',
                     'templates' => [
                         'editable' => __DIR__.'/generators/crud/editable',
                     ],
@@ -45,15 +45,15 @@ class Bootstrap implements BootstrapInterface
             }
 
             if (!isset($app->getModule('gii')->generators['giiant-module'])) {
-                $app->getModule('gii')->generators['giiant-module'] = 'schmunk42\giiant\generators\module\Generator';
+                $app->getModule('gii')->generators['giiant-module'] = 'Yjl\Gii\generators\module\Generator';
             }
 
             if (!isset($app->getModule('gii')->generators['giiant-test'])) {
-                $app->getModule('gii')->generators['giiant-test'] = 'schmunk42\giiant\generators\test\Generator';
+                $app->getModule('gii')->generators['giiant-test'] = 'Yjl\Gii\generators\test\Generator';
             }
 
             if ($app instanceof \yii\console\Application) {
-                $app->controllerMap['giiant-batch'] = 'schmunk42\giiant\commands\BatchController';
+                $app->controllerMap['giiant-batch'] = 'Yjl\Gii\commands\BatchController';
             }
         }
     }

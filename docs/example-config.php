@@ -2,16 +2,16 @@
 
 namespace app\config;
 
-use schmunk42\giiant\generators\crud\callbacks\base\Callback;
-use schmunk42\giiant\generators\crud\callbacks\yii\Db;
-use schmunk42\giiant\generators\crud\callbacks\yii\Html;
+use Yjl\Gii\generators\crud\callbacks\base\Callback;
+use Yjl\Gii\generators\crud\callbacks\yii\Db;
+use Yjl\Gii\generators\crud\callbacks\yii\Html;
 
 $aceEditorField = function ($attribute, $model, $generator) {
     return "\$form->field(\$model, '{$attribute}')->widget(\\trntv\\aceeditor\\AceEditor::className())";
 };
 
 \Yii::$container->set(
-    \schmunk42\giiant\generators\crud\providers\core\CallbackProvider::class,
+    \Yjl\Gii\generators\crud\providers\core\CallbackProvider::class,
     [
         'columnFormats' => [
             // hide system fields, but not ID in table
@@ -35,7 +35,7 @@ $aceEditorField = function ($attribute, $model, $generator) {
 return [
     'controllerMap' => [
         'batch' => [
-            'class' => 'schmunk42\giiant\commands\BatchController',
+            'class' => 'Yjl\Gii\commands\BatchController',
             'overwrite' => true,
             'modelNamespace' => $crudNs . '\models',
             'modelQueryNamespace' => $crudNs . '\models\query',
@@ -46,7 +46,7 @@ return [
             'crudTidyOutput' => true,
             'crudAccessFilter' => false,
             'crudProviders' => [
-                \schmunk42\giiant\generators\crud\providers\core\OptsProvider::class
+                \Yjl\Gii\generators\crud\providers\core\OptsProvider::class
             ],
             'tablePrefix' => 'project_',
             'skipTables' => [

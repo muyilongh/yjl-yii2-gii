@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Yjl\\Gii\\": ""
+            "Yjl\\Gii\\": "src"
         }
     }
 }

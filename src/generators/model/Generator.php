@@ -132,7 +132,7 @@ class Generator extends \yii\gii\generators\model\Generator
      */
     public function getName()
     {
-        return 'Giiant Model';
+        return 'YjlGii-model';
     }
 
     /**

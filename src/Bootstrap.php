@@ -35,8 +35,8 @@ class Bootstrap implements BootstrapInterface
                 $app->getModule('gii')->generators['giiant-extension'] = 'Yjl\Gii\generators\extension\Generator';
             }
 
-            if (!isset($app->getModule('gii')->generators['giiant-crud'])) {
-                $app->getModule('gii')->generators['giiant-crud'] = [
+            if (!isset($app->getModule('gii')->generators['YjlGii-crud'])) {
+                $app->getModule('gii')->generators['YjlGii'] = [
                     'class' => 'Yjl\Gii\generators\crud\Generator',
                     'templates' => [
                         'editable' => __DIR__.'/generators/crud/editable',
@@ -44,16 +44,16 @@ class Bootstrap implements BootstrapInterface
                 ];
             }
 
-            if (!isset($app->getModule('gii')->generators['giiant-module'])) {
+            if (!isset($app->getModule('gii')->generators['YjlGii-module'])) {
                 $app->getModule('gii')->generators['giiant-module'] = 'Yjl\Gii\generators\module\Generator';
             }
 
-            if (!isset($app->getModule('gii')->generators['giiant-test'])) {
-                $app->getModule('gii')->generators['giiant-test'] = 'Yjl\Gii\generators\test\Generator';
+            if (!isset($app->getModule('gii')->generators['YjlGii-test'])) {
+                $app->getModule('gii')->generators['YjlGii-test'] = 'Yjl\Gii\generators\test\Generator';
             }
 
             if ($app instanceof \yii\console\Application) {
-                $app->controllerMap['giiant-batch'] = 'Yjl\Gii\commands\BatchController';
+                $app->controllerMap['YjlGii-batch'] = 'Yjl\Gii\commands\BatchController';
             }
         }
     }

@@ -45,7 +45,7 @@ class Bootstrap implements BootstrapInterface
             }
 
             if (!isset($app->getModule('gii')->generators['YjlGii-module'])) {
-                $app->getModule('gii')->generators['giiant-module'] = 'Yjl\Gii\generators\module\Generator';
+                $app->getModule('gii')->generators['YjlGii-module'] = 'Yjl\Gii\generators\module\Generator';
             }
 
             if (!isset($app->getModule('gii')->generators['YjlGii-test'])) {

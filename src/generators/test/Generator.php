@@ -45,7 +45,7 @@ class Generator extends \Yjl\Gii\generators\model\Generator
      */
     public function getName()
     {
-        return 'Giiant Test';
+        return 'YjlGii Test';
     }
 
     /**

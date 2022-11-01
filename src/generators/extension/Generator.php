@@ -20,7 +20,7 @@ class Generator extends \yii\gii\generators\extension\Generator
      */
     public function getName()
     {
-        return 'Giiant Extension';
+        return 'YjlGii Extension';
     }
 
     public function rules()

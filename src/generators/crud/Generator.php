@@ -18,7 +18,8 @@ use Yjl\Gii\helpers\SaveForm;
 use yii\web\Controller;
 use yii\db\ActiveRecord;
 use yii\db\Schema;
-
+//use \Yjl\Gii\generators\BaseGenerator;
+use \yii\gii\Generator as BaseGenerator;
 
 /**
  * This generator generates an extended version of CRUDs.
@@ -41,7 +42,7 @@ class Generator extends \yii\gii\generators\crud\Generator
     public $baseControllerClass = 'yii\web\Controller';
     public $indexWidgetType = 'grid';
     public $searchModelClass = '';
-
+    public $generateSearchModel;
 
     /**
      * @var null comma separated list of provider classes 提供程序类的逗号分隔列表
@@ -220,7 +221,7 @@ class Generator extends \yii\gii\generators\crud\Generator
      */
     public function getName()
     {
-        return 'Giiant CRUD';
+        return 'YjlGii CRUD';
     }
 
     /**
@@ -314,6 +315,8 @@ class Generator extends \yii\gii\generators\crud\Generator
                 [['enableI18N'], 'boolean'],
                 [['messageCategory'], 'validateMessageCategory', 'skipOnEmpty' => false],
                 [['listFields', 'formFields', 'inputType'], 'safe'],
+//                [[ 'generateRelations', 'overwriteSearchModelClass', 'pluralize', 'expandable', 'cancelable', 'pdf', 'loggedUserOnly'], 'boolean'],
+                [[ 'overwriteSearchModelClass'], 'boolean'],
             ]
         );
     }
@@ -894,8 +897,11 @@ class Generator extends \yii\gii\generators\crud\Generator
 
         if (!empty($this->searchModelClass)) {
             $searchModel = Yii::getAlias('@' . str_replace('\\', '/', ltrim($this->searchModelClass, '\\') . '.php'));
+//            dd( $this->overwriteSearchModelClass || !is_file($searchModel));
+//            $this->overwriteSearchModelClass =true;
             if ($this->overwriteSearchModelClass || !is_file($searchModel)) {
                 $files[] = new CodeFile($searchModel, $this->render('search.php'));
+//                dd($searchModel);
             }
         }
 

@@ -20,7 +20,7 @@ class Generator extends \yii\gii\generators\module\Generator
      */
     public function getName()
     {
-        return 'Giiant Module';
+        return 'YjlGii Module';
     }
 
     /**
